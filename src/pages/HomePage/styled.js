@@ -12,13 +12,14 @@ export const HomePageContainer = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
-    h1 {
-        text-align: center;
-        color: ${mainTextColor};
-        font-size: 30px;
-        font-weight: bold;
-    }
 `;
+
+export const HomePageHeader = styled.h1`
+    text-align: center;
+    color: ${mainTextColor};
+    font-size: 30px;
+    font-weight: bold;
+`
 
 export const AddContactButton = styled.button`
     background-color: ${mainTextColor};
@@ -32,4 +33,12 @@ export const AddContactButton = styled.button`
     right: 20px;
     font-size: 30px;
     text-align: center;
+`;
+
+export const ContactCardsContainer = styled.div`
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;

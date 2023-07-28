@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { AddContactButton, HomePageContainer } from "./styled";
+import { AddContactButton, ContactCardsContainer, HomePageContainer, HomePageHeader } from "./styled";
+import ContactCard from "../../components/ContactCard";
 
 export default function HomePage() {
 
@@ -10,8 +11,16 @@ export default function HomePage() {
 
     return (
         <HomePageContainer>
-            <h1>Contacts</h1>
+            <HomePageHeader>Contacts</HomePageHeader>
+
             
+            <ContactCardsContainer>
+            {contacts.map((contact) => (
+                <ContactCard key={contact.id} contact={contact} />
+            ))}
+            </ContactCardsContainer>
+
+
             <AddContactButton onClick={() => navigate("/add")}>+</AddContactButton>
         </HomePageContainer>
     )
