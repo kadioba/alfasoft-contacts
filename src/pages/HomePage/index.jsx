@@ -16,12 +16,13 @@ export default function HomePage() {
         <HomePageContainer>
             <HomePageHeader>Contacts</HomePageHeader>
 
-
+            {contacts ? (
             <ContactCardsContainer>
                 {contacts.map((contact) => (
                     <ContactCard key={contact.id} contact={contact} setDeletingContact={setDeletingContact} />
                 ))}
             </ContactCardsContainer>
+            ) : null}
 
 
             <AddContactButton onClick={() => navigate("/add")}>+</AddContactButton>

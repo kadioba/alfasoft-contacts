@@ -1,9 +1,7 @@
 import { ContactCardContainer } from "./styled";
 import { PropTypes } from "prop-types";
-import { useState } from "react";
 import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-import DeleteCard from "../DeleteCard";
 
 export default function ContactCard({ contact, setDeletingContact }) {
 
@@ -17,9 +15,8 @@ export default function ContactCard({ contact, setDeletingContact }) {
                 <h2>{contact.email}</h2>
             </div>
             <AiOutlineDelete size="20px" onClick={() => setDeletingContact(contact)} />
-            <AiOutlineEdit size="20px" />
+            <AiOutlineEdit size="20px" onClick={() => navigate(`/contact/${contact.id}/edit`)} />
         </ContactCardContainer>
-
     )
 }
 

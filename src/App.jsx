@@ -14,6 +14,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/add" element={<AddContactPage />} />
           <Route path="/contact/:id" element={<ContactPage />} />
+          <Route path="/contact/:id/edit" element={<AddContactPage />} />
         </Routes>
       </BrowserRouter>
     </PagesContainer>
