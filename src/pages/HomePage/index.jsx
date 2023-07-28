@@ -17,11 +17,11 @@ export default function HomePage() {
             <HomePageHeader>Contacts</HomePageHeader>
 
             {contacts ? (
-            <ContactCardsContainer>
-                {contacts.map((contact) => (
-                    <ContactCard key={contact.id} contact={contact} setDeletingContact={setDeletingContact} />
-                ))}
-            </ContactCardsContainer>
+                <ContactCardsContainer>
+                    {contacts.map((contact) => (
+                        <ContactCard key={contact.id} contact={contact} setDeletingContact={setDeletingContact} />
+                    ))}
+                </ContactCardsContainer>
             ) : null}
 
 

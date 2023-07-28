@@ -25,12 +25,11 @@ export const ContactCardContainer = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background-color: teal;
     }
     h1 {
         color: ${mainTextColor};
-        font-size: 25px;
-        font-weight: normal;
+        font-size: 20px;
+        font-weight: 500;
     }
     h2 {
         font-size: 15px ;

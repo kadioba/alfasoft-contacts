@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { AddContactContainer } from "./styled";
+import { AddContactContainer, BackToHomeButton, SubmitButton } from "./styled";
 import { useNavigate, useParams } from "react-router-dom";
 
 export default function AddContactPage() {
@@ -102,9 +102,11 @@ export default function AddContactPage() {
                 <input type="text" placeholder="Name" onChange={(e) => setName(e.target.value)} value={name} minLength={5} />
                 <input type="tel" placeholder="Contact Number" onChange={(e) => setContact(e.target.value)} value={contact} minLength={9} maxLength={9} />
                 <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} value={email} />
-                <input type="text" placeholder="Picture" onChange={(e) => setPicture(e.target.value)} value={picture} required />
-                <button type="submit">Submit</button>
+                <input type="url" placeholder="Picture" onChange={(e) => setPicture(e.target.value)} value={picture} required />
+                <SubmitButton type="submit">Submit</SubmitButton>
             </form>
+
+            <BackToHomeButton onClick={() => navigate("/")}>Back to Home</BackToHomeButton>
         </AddContactContainer>
     );
 }

@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import { mainColor, mainTextColor } from "../../constants/colors";
-import { Link } from "react-router-dom";
 
 export const ContactPageContainer = styled.div`
     width: 95%;
@@ -48,6 +47,7 @@ export const ContactDetailsContainer = styled.div`
         color: ${mainTextColor};
         font-size: 25px;
         font-weight: normal;
+        margin-top: 10px;
     }
     h3 {
         color: black;
@@ -60,7 +60,24 @@ export const ContactDetailsContainer = styled.div`
     }
     `;
 
-export const EditOrDeleteContact = styled.div`
+export const EditContact = styled.div`
+    display: flex;
+    width: 80%;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    h1 {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+`;
+
+export const DeleteContact = styled.div`
     display: flex;
     width: 80%;
     align-items: center;
@@ -77,14 +94,22 @@ export const EditOrDeleteContact = styled.div`
     }
 `;
 
-export const BackToContacts = styled(Link)`
-    text-decoration: none;
-    margin-top: 15px;
-    margin-left: 15px;
-    align-self: flex-start;
-    color: ${mainTextColor};
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 10px;
+export const BackToHomeButton = styled.button`
+    width: 80%;
+    height: 40px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: ${mainTextColor};
+    color: white;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+        color: ${mainTextColor};
+    }
 `;
-

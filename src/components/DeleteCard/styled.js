@@ -16,6 +16,7 @@ export const DeleteCover = styled.div`
 
 export const DeleteContainer = styled.div`
   width: 70%;
+  padding: 20px;
   max-width: 400px;
   height: 220px;
   border-radius: 15px;

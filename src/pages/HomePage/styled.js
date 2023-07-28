@@ -17,8 +17,10 @@ export const HomePageContainer = styled.div`
 export const HomePageHeader = styled.h1`
     text-align: center;
     color: ${mainTextColor};
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
 `
 
 export const AddContactButton = styled.button`
