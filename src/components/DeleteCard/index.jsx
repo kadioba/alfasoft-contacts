@@ -24,7 +24,7 @@ export default function DeleteCard({ id, name, setDeleting }) {
                 <h2>{name}</h2>
                 <div>
                     <button onClick={compelteDeletion}>YES</button>
-                    <button>NO</button>
+                    <button onClick={() => setDeleting(false)}>NO</button>
                 </div>
             </DeleteContainer>
         </DeleteCover>
