@@ -3,6 +3,7 @@ import { styled } from "styled-components"
 import { backgroundColor } from "./constants/colors"
 import HomePage from "./pages/HomePage"
 import AddContactPage from "./pages/AddContactPage"
+import ContactPage from "./pages/ContactPage"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/add" element={<AddContactPage />} />
+          <Route path="/contact/:id" element={<ContactPage />} />
         </Routes>
       </BrowserRouter>
     </PagesContainer>

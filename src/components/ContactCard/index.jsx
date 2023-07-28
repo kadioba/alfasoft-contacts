@@ -1,10 +1,13 @@
 import { ContactCardContainer } from "./styled";
 import { PropTypes } from "prop-types";
 import { AiOutlineDelete, AiOutlineEdit } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 export default function ContactCard({ contact }) {
+
+    const navigate = useNavigate();
     return (
-        <ContactCardContainer>
+        <ContactCardContainer onClick={() => navigate(`/contact/${contact.id}`)}>
             <img src={contact.picture} alt="random" />
             <div>
                 <h1>{contact.name}</h1>

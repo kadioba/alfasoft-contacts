@@ -37,7 +37,6 @@ export const AddContactButton = styled.button`
 
 export const ContactCardsContainer = styled.div`
     width: 100%;
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;

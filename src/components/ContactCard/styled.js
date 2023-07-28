@@ -13,6 +13,7 @@ export const ContactCardContainer = styled.div`
     box-sizing: border-box;
     margin-bottom: 10px;
     justify-content: space-around;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     img {
         width: 60px;
         height: 60px;
