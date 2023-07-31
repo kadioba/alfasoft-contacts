@@ -24,7 +24,7 @@ Install the dependencies: npm install
 
 Start the development server: npm run dev
 
-Open your browser and visit https://github.com/kadioba/alfasoft-contacts.git to view the application.
+Open your browser and visit http://localhost:5173/ to view the application.
 
 ## Technologies Used
 React: A JavaScript library for building user interfaces.
